@@ -1,8 +1,4 @@
-const set_class = function(the_class, unique_from, target) {
-	for(let any_class of unique_from)
-		target.classList.remove(any_class)
-	target.classList.add(the_class)
-}
+
 const motifs = [
 	"light",
 	"dark",
@@ -12,12 +8,15 @@ const motifs = [
 const setMotif = function(theMotif = null) {
 	for(let anyMotif of motifs)
 		document.body.parentNode.classList.remove(anyMotif)
-	if(theMotif == null)
+	if(theMotif == null) {
+		localStorage.removeItem(`motif`)
 		return document.body.parentNode.classList.remove(`custom-motif`)
+	}
 	else
 		document.body.parentNode.classList.add(`custom-motif`)
 	
 	document.body.parentNode.classList.add(theMotif)
+	localStorage.setItem(`motif`,theMotif)
 }
 const fonts = [
 	"dyslexia",
@@ -27,8 +26,20 @@ const fonts = [
 const setFont = function(theFont = null) {
 	for(let anyFont of fonts)
 		document.body.parentNode.classList.remove(anyFont)
-	if(theFont == null)
+	if(theFont == null) {
+		localStorage.removeItem(`font`)
 		return ;
-	
+	}
 	document.body.parentNode.classList.add(theFont)
+	localStorage.setItem(`font`,theFont)
+}
+
+const start = function() {
+	let
+		motif = localStorage.getItem(`motif`),
+		font = localStorage.getItem(`font`)
+	if(motif)
+		setMotif(motif)
+	if(font)
+		setFont(font)
 }
