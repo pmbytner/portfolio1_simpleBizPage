@@ -1,0 +1,30 @@
+html.custom-motif.light {
+	background-color: hsl(105,37%,63%);
+	color: hsl(325,100%,15%);
+}
+html.custom-motif.light > body > nav,
+html.custom-motif.light > body > main,
+html.custom-motif.light > body > dialog
+{
+	background-color: hsl(105,37%,80%);
+}
+html.custom-motif.light > body > nav a:hover,
+html.custom-motif.light > body > dialog button:hover
+{
+	background-color: hsl(120,60%,75%);
+	color: hsl(340,100%,15%);
+}
+html.custom-motif.light > body > nav a:active,
+html.custom-motif.light > body > dialog button:active
+{
+	background-color: hsl(105,60%,80%);
+	color: hsl(325,100%,25%);
+}
+html.custom-motif.light > body > main > article > nav a:hover {
+	background-color: hsl(120,60%,75%);
+	color: hsl(340,100%,15%);
+}
+html.custom-motif.light > body > main > article > nav a:active {
+	background-color: hsl(105,60%,80%);
+	color: hsl(325,100%,25%);
+}

@@ -1,0 +1,39 @@
+html.custom-motif.plain {
+	background-color: white;
+	color: black;
+}
+html.custom-motif.plain > body > nav,
+html.custom-motif.plain > body > main {
+	border: 1px solid black;
+	padding: 0px;
+}
+html.custom-motif.plain > body > nav a {
+	border-color: transparent;
+	border: 2px solid transparent;
+}
+html.custom-motif.plain > body > nav a:hover,
+html.custom-motif.plain > body > dialog button:hover
+{
+	border: 2px dashed black;
+	margin: calc(0.25em - 2px);
+	padding: calc(0.75em + 2px);
+}
+html.custom-motif.plain > body > nav a:active,
+html.custom-motif.plain > body > dialog button:active
+{
+	background-color: hsl(350,100%,95%);
+	border: 2px solid black;
+	margin: calc(0.25em + 2px);
+	padding: calc(0.75em - 2px);
+}
+html.custom-motif.plain > body > main > article > nav a:hover {
+	border: 2px dashed black;
+	margin: calc(0.25em - 2px);
+	padding: 0.25em;
+}
+html.custom-motif.plain > body > main > article > nav a:active {
+	background-color: hsl(350,100%,95%);
+	border: 2px solid black;
+	margin: calc(0.25em + 2px);
+	padding: calc(0.25em - 4px);
+}

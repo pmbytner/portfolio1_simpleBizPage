@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="v3" id="góra">
+<head>
+	<meta charset="utf-8"/>
+	<title>Anne d'Example</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+	<link
+		rel="icon"
+		type="image/x-icon"
+		href="gfx/logo.svg"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/main.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/fonts.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/layout-wide.css"
+		/>
+	<link
+		rel="stylesheet"
+		media="(prefers-color-scheme: light)"
+		href="styles/motif-default-light.css"
+		/>
+	<link
+		rel="stylesheet"
+		media="(prefers-color-scheme: dark)"
+		href="styles/motif-default-dark.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/motif-chosen-light.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/motif-chosen-dark.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/motif-chosen-grey.css"
+		/>
+	<link
+		rel="stylesheet"
+		href="styles/motif-chosen-plain.css"
+		/>
+	<base href="" target="_blank"/>
+	<script src="scripts/functions.js"></script>
+</head>
+<body>
+	<header>
+		<a href="" target="_self">
+		<img id="logo" src="gfx/logo.svg"/>
+		</a>
+		<aside>
+			<a href="" target="_self">
+			<h1>Anne Example</h1>
+			</a>
+		</aside>
+	</header>
+	<nav>
+		<a href="#about" target="_self">About</a>
+		<a href="#follow" target="_self">Follow me</a>
+		<a href="#contact" target="_self">Contact</a>
+		<a
+			href="#"
+			target="_self"
+			onclick="settings.showModal(); return false">
+			Settings
+		</a>
+	</nav>
+	<main>
+		<article id="about">
+			<p>I am <strong>Anne Example</strong>, </p>
+			<p>Zażółć gęślą jaźń</p>
+			<p>this is a page for my personal business. I am an illustrator, graphic designer, tattooer, musician, photographer, florist, hairdresser, confectioner, chef or restaurant owner, or something like that. My minor business might be a local workshop or can be entirely dependent on on-line customer. I might be present on social media, but to keep my business running independently I chose to maintain this page with necessary info and portfolio, so you can easily check it as a client even if you yourself lack an account on particular SM, and a <em>link-tree</em> section, so you can follow me where you prefer.</p>
+			<p>For my clients' convenience the page is lightweight, responsive and accessible. Without unnecessary server requests and external dependencies you can get it quickly even on mobile or hot-spot connection. All data is loaded at once and navigated through with simple <em>HTML5+CSS</em>. Simple yet effective design is made to fit both mobile devices and a large desktop screen. Furthermore, it respects user's system settings in terms of light/dark motif preferences, but it also offers an option to choose one of several motifs made with needs of different people in mind.</p>
+			<p>Page's color palletes are picked to match the vibe of my work, but also ensure proper contrast and indicate state of interactive elements. Alternative motifs, beside light and dark, are for example ones that accomodate needs of people with vision impairments, provide even better contrast, or with printing in mind - in case a client wants to print some section of the page. Likewise, I have chosen a font that should help you feel the vibe I want to share, but is still readable, and for the case you require more clarity you can choose an alternative, dyslexia-friendly, <em>comic</em>-like font. This is achieved through class-switching with very simple <em>JavaScript</em>, used together with handcrafted CSS rules, and <em>the choice is remembered <strong>(todo)</strong></em> between visits from the same device.</p>
+		</article>
+		<article id="follow">
+			<p>You can follow me at the following platforms</p>
+			<nav>
+				<a href="https://anneexample.shopingplatform.com/">
+					AnneExample Shop
+				</a>
+				<a href="https://some.sm/anne.example">
+					anne.example @ Some.sm
+				</a>
+				<a href="https://follow.me/anne.example">
+					anne.example @ Follow.me
+				</a>
+				<a href="https://graysky.pl/profile/AnneExample.graysky.pl">
+					AnneExample @ Greysky
+				</a>
+			</nav>
+		</article>
+		<article id="contact">
+			<p>You can contact me for business</p>
+			
+			<nav>
+				<a href="mailto:annexample@minorbuisness.me">
+					E-mail me here
+				</a>
+			</nav>
+		</article>
+	</main>
+	<dialog id="settings">
+		<header>
+			<button onclick="setMotif(); setFont()">All default</button>
+			<button onclick="settings.close()" autofocus>Close settings</button>
+		</header>
+		<section>
+			<h2>Motif</h2>
+			<button onclick="setMotif()">Default</button>
+			<button onclick="setMotif('light')">Light</button>
+			<button onclick="setMotif('dark')">Dark</button>
+			<button onclick="setMotif('grey')">Polish</button>
+			<button onclick="setMotif('plain')">Black-on-white</button>
+		</section>
+		<section>
+			<h2>Font</h2>
+			<button onclick="setFont()">Default</button>
+			<button onclick="setFont('compromise')">Somewhere in the middle</button>
+			<button onclick="setFont('dyslexia')">Dyslexia-friendly</button>
+			<button onclick="setFont('boring')">Boring</button>
+		</section>
+	</dialog>
+</body>
+</html>

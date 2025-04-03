@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733334 67.733334"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="4.7729708"
+     inkscape:cx="224.80758"
+     inkscape:cy="170.64844"
+     inkscape:window-width="2495"
+     inkscape:window-height="1417"
+     inkscape:window-x="57"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1.0583333"
+       spacingy="1.0583333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="4"
+       enabled="true"
+       visible="true"
+       dotted="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="15.503971"
+       y="175.99102"
+       width="217.89364"
+       height="85.481354"
+       id="rect2" />
+    <rect
+       x="16.76105"
+       y="15.503971"
+       width="229.20735"
+       height="99.30922"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ff5599;stroke-width:0.264583"
+       d="m 8.4666661,25.399998 c 0,-10.583332 6.3499999,-16.9333319 14.8166659,-16.9333319 6.349999,0 10.583335,6.4189369 10.583334,12.7142159 -1e-6,-6.364216 4.233304,-12.6644563 10.583333,-12.6857819 8.466664,-0.028434 13.758331,6.3215659 13.758331,16.9048979 0,21.166666 -24.341665,21.166666 -24.341664,38.085781 C 33.866665,46.566664 8.4666661,46.566664 8.4666661,25.399998 Z"
+       id="path3"
+       sodipodi:nodetypes="sscsscs" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,16.05159,17.239566)"
+       id="text1"
+       style="text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#800000"><tspan
+         x="16.761719"
+         y="52.837267"
+         id="tspan4"><tspan
+           style="font-size:42.6667px;font-family:'Antykwa Torunska';-inkscape-font-specification:'Antykwa Torunska, Normal'"
+           id="tspan3">Anne</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,12.827014,-12.800121)"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Antykwa Torunska';-inkscape-font-specification:'Antykwa Torunska, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#800000"><tspan
+         x="15.503906"
+         y="203.99023"
+         id="tspan6"><tspan
+           style="font-size:32px"
+           id="tspan5">Example</tspan></tspan></text>
+  </g>
+</svg>

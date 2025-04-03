@@ -1,0 +1,56 @@
+/*Antykwa Półtawskiego*/
+@font-face {
+	font-family: 'Antykwa Półtawskiego';
+	src: url('../fonts/antpolt/antpolt-regular.otf');
+}
+@font-face {
+	font-family: 'Antykwa Półtawskiego';
+	src: url('../fonts/antpolt/antpolt-bold.otf');
+    font-weight: bold;
+}
+@font-face {
+	font-family: 'Antykwa Półtawskiego';
+	src: url('../fonts/antpolt/antpolt-italic.otf');
+    font-weight: italic;
+}
+@font-face {
+	font-family:'Antykwa Półtawskiego';
+	src: url('../fonts/antpolt/antpolt-bolditalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+/*Antykwa Toruńska*/
+@font-face {
+	font-family: 'Antykwa Toruńska';
+	src: url('../fonts/antt/AntykwaTorunska-Regular.otf');
+}
+@font-face {
+	font-family: 'Antykwa Toruńska';
+	src: url('../fonts/antt/AntykwaTorunska-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+	font-family: 'Antykwa Toruńska';
+	src: url('../fonts/antt/AntykwaTorunska-Italic.otf');
+    font-weight: italic;
+}
+@font-face {
+	font-family:'Antykwa Toruńska';
+	src: url('../fonts/antt/AntykwaTorunska-RegularItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+html,
+body > header {
+	font-family: 'Antykwa Toruńska';
+}
+html.compromise > body > :not(header) {
+	font-family: 'Antykwa Półtawskiego';
+}
+html.dyslexia > body > :not(header) {
+	font-family: "Klee One";
+}
+html.boring > body > :not(header) {
+	font-family: "Times New Roman";
+}

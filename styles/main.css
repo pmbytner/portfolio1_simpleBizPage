@@ -1,0 +1,267 @@
+/*layout*/
+html {
+	font-size: 24px;
+	height: calc(100% - 2em);
+	padding: 1em;
+}
+
+/*general*/
+body {
+	display: grid;
+	height: 100%;
+	margin: auto;
+}
+/*v1*/
+html.v1 > body {
+	grid-template-columns:
+		min(30em, 100vw - 2em);
+	width: min(30em, 100vw - 2em);
+}
+html.v1 > body:has(> main > article:target) {
+	grid-template-areas:
+		"head"
+		"menu"
+		"main"
+		;
+	grid-template-rows:
+		200px
+		auto
+		1fr
+		;
+}
+html.v1 > body:not(:has(> main > article:target)) {
+	grid-template-areas:
+		"head"
+		"menu"
+		;
+	grid-template-rows:
+		min(50vh, 934px)
+		auto
+		1fr
+		;
+}
+/*v2*/
+html.v2 > body {
+	width: min(30em, 100vw - 2em);
+}
+html.v2 > body:has(> main > article:target) {
+	grid-template-columns:
+		200px 1fr;
+	grid-template-areas:
+		"head menu"
+		"main main"
+		;
+	grid-template-rows:
+		200px
+		1fr
+		;
+}
+html.v2 > body:not(:has(> main > article:target)) {
+	grid-template-columns:
+		min(30em, 100vw - 2em);
+	grid-template-areas:
+		"head"
+		"menu"
+		;
+	grid-template-rows:
+		min(50vh, 934px)
+		auto
+		1fr
+		;
+}
+/*v3*/
+html.v3 > body {
+	grid-template-columns:
+		min(30em, 100vw - 2em);
+	width: min(30em, 100vw - 2em);
+}
+html.v3 > body:has(> main > article:target) {
+	grid-template-areas:
+		"head"
+		"menu"
+		"main"
+		;
+	grid-template-rows:
+		200px
+		auto
+		1fr
+		;
+}
+html.v3 > body:not(:has(> main > article:target)) {
+	grid-template-areas:
+		"head"
+		"menu"
+		;
+	grid-template-rows:
+		min(50vh, 934px)
+		auto
+		1fr
+		;
+}
+html.v3 > body:has(> main > article:target) > header {
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+html > body > header > aside {
+	display: none;
+}
+html.v3 > body:has(> main > article:target) > header > aside {
+	display: block;
+	font-size: 1.5em;
+}
+html.v3 > body:has(> main > article:target) > header > aside > a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	color: inherit;
+}
+
+body > header {
+	grid-area: head;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-end;
+}
+
+body > nav {
+	grid-area: menu;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow: auto;
+}
+body > main {
+	grid-area: main;
+	overflow: auto;
+}
+/*body > header img*/#logo {
+	max-height: min(50vh, 934px);
+	min-width: 200px;
+	width: 100%;
+	object-fit: scale-down;
+}
+body:has(> main > article:target) > header img#logo {
+	height: 200px;
+}
+body > header > a {
+	display: block;
+}
+
+html > body > nav,
+html > body > main {
+	padding: 1px;
+}
+
+/*navigation mechanics*/
+body > main > article:target {
+	padding: 1em;
+}
+body > main > article:not(:target) {
+	display: none;
+}
+
+/*navbar mechanics and style*/
+body > nav a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	margin: 0.25em;
+	padding: 0.75em;
+	line-height: 1.5em;
+	border: 2px solid;
+}
+body > nav a:link,
+body > nav a[onclick] {
+	cursor: pointer;
+}
+/* nav link and button border pop */
+html > body > nav a:hover,
+html > body > dialog:open button:hover
+{
+	margin: calc(0.25em - 2px);
+	padding: calc(0.75em + 2px);
+}
+html > body > nav a:active,
+html > body > dialog:open button:active
+{
+	margin: calc(0.25em + 2px);
+	padding: calc(0.75em - 2px);
+}
+
+/*content formatting*/
+body > main > article > p {
+	text-indent: 1ch;
+}
+
+/*content navblocks*/
+body > main > article > nav {
+	display: flex;
+	flex-flow: column;
+	
+}
+body > main > article > nav > a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+	padding: 0.25em;
+	margin: 0.25em 0;
+}
+
+/* in-text block-link pop */
+html > body > main > article > nav a:hover {
+	margin: calc(0.25em - 2px);
+	padding: calc(0.25em + 2px);
+}
+html > body > main > article > nav a:active {
+	margin: calc(0.25em + 2px);
+	padding: calc(0.25em - 2px);
+}
+
+html > body > main > article h2 {
+	font-size: 1.15em;
+}
+html > body > main > article h3 {
+	font-size: 1.07em;
+}
+h2, h3, h4, h5, h6 {
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+}
+
+html > body > dialog::backdrop {
+	background: hsla(0, 0%, 0%, 0.5);
+	background: url("../gfx/backdrop.svg");
+	background-size: 16px;
+}
+html > body > dialog:open {
+	color: inherit;
+	margin: auto;
+	width: min(30em, 100vw - 2em);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* gap: 1em; */
+}
+html > body > dialog > header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+html > body > dialog > section {
+	display: flex;
+	flex-direction: column;
+	padding: 0.75em;
+	margin: 0.25em;
+}
+html > body > dialog button {
+	font: inherit;
+	color: inherit;
+	margin: 0.25em;
+	padding: 0.75em;
+	border: 2px solid currentcolor;
+	background: transparent;
+}
